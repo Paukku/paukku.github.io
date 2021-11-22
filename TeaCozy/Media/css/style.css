@@ -1,0 +1,155 @@
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    min-height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+a {
+    text-decoration: underline;
+    color: seashell;
+    
+}
+
+
+header img {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 50px;
+    align-items: flex-start;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 10px;
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-self: auto;
+    
+}
+
+main {
+    position: relative;
+    top: 63px;
+}
+
+#mission {
+    background-image: url("../img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+#mission h2 {
+    background-color: black;
+    margin:0;
+    width: 100%;
+    padding: 10px;
+}
+#mission h4 {
+    background-color: black;
+    margin:0;
+    width: 100%;
+    padding: 10px;
+}
+
+#featured {
+    width:75%;
+    margin: auto;
+}
+
+#featured h2 {
+    padding-top: 70px;
+    margin:0;
+}
+
+#org {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#featured img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+figure {
+    margin: 20px;
+}
+
+#locations {
+    min-height: 500px;
+    background-image: url("../img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85%;
+    padding-top: 50px;
+    margin: auto;
+    
+}
+
+.loc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.location {
+    background-color: black;
+    margin:0px 20px;
+    width: 300px;
+    opacity: 1;
+}
+
+#locations h1 {
+    margin:15px 0;
+}
+
+footer{
+    width:80%;
+    left:0;
+    padding: 20px 20px;
+    text-align: left;
+    
+}
