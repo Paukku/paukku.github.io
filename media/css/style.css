@@ -1,0 +1,91 @@
+body {
+    background: #2A1B3D;
+    margin: 0;
+    background: -webkit-linear-gradient(right, rgba(42, 27, 61, 0.8), rgba(216, 63, 135, 0.8)), url("../pictures/bgpic.jpeg") no-repeat center center fixed ;
+    background: linear-gradient(right, rgba(42, 27, 61, 0.8), rgba(216, 63, 135, 0.8)), url("../pictures/bgpic.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+html {
+    height: 100%
+}
+
+header {
+    margin-right: auto;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1 {
+    font-size: 4.5em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fefefe;
+}
+
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fefefe;
+}
+
+nav {
+    background-color: #d83f87;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 20%;
+
+}
+
+ul {
+    left: 0;
+    margin:0;
+    list-style-type: none;
+    padding: 0; 
+}
+li {
+    
+    margin:20px 0;
+    padding:20px;
+    color:#FFEE;
+    background-color: #d83f87;
+    
+}
+
+a {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFEE;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2A1B3D;
+    width: 100%;
+    min-height: 50px;
+    
+    bottom: 0;
+}
+
+#aboutme, #websites, #games {
+    background-color: #a483b6; 
+    width: 70%;
+    opacity: 0.7;
+    margin: 20px auto;
+    padding: 15px;
+}
+
