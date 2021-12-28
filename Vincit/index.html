@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Vincit, Rising Star pre-assignment</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link href="./resource/css/style.css" type="text/css" rel="stylesheet">
+        <script src="./resource/js/app.js"></script> 
+    </head>
+
+    <body>
+        <h1>Rising Star Pre-assignment</h1>
+        <div class="main">
+            <p>
+                This assignment is for Vincit Rising Star program. Made by Paula Häyrynen. The program gives information about prices decreasing in a row for given data range, highest price in euros and time when it was. Also program tell for time travellers when they should buy and sell bitcoins or not.
+            </p>
+            <p>
+                Give start day and end day then press the Submit button. <br>
+                Dates should be different. You can't access same day from start day and end day.
+            </p>
+
+            <form id="dates" name='dates'>
+                <label for="datepicker-1">
+                    <input type = "text" id = "datepicker-1" name = "datepicker-1" placeholder="Start day" required ><br>
+                </label>
+                <label for="datepicker-2">
+                    <input type = "text" id = "datepicker-2" name = "datepicker-2" placeholder="End day" required><br>
+                </label>
+            </form>
+            <button onclick="createUrl()">Submit</button>
+            
+            <p id="decrease">
+
+            </p>
+
+            <p id="buyorsell">
+
+            </p>
+
+            <p id="data">
+
+            </p>
+            
+        </div>
+    </body>
+    </html>
