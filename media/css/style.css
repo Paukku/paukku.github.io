@@ -126,7 +126,7 @@ p {
     margin: 10px;
 }
 
-@media screen and (max-width: 870px) {
+@media only screen and (max-width: 870px) {
 
     header {
         display: flex;
