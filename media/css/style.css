@@ -21,7 +21,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    margin-left: auto;
     
 }
 
@@ -38,6 +38,7 @@ h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #fefefe;
+    
 }
 
 nav {
@@ -51,19 +52,25 @@ nav {
 
 }
 
-ul {
+nav ul {
+    width: 100%;
     left: 0;
     margin:0;
     list-style-type: none;
-    padding: 0; 
+    padding: 0;
+    overflow: hidden;
 }
-li {
-    
+nav ul li {
     margin:20px 0;
     padding:20px;
     color:#FFEE;
     background-color: #d83f87;
-    
+}
+nav ul li:hover {
+    margin:20px 0;
+    padding:20px;
+    color:#FFEE;
+    background-color: #b87694;
 }
 
 a {
@@ -77,15 +84,109 @@ footer {
     background-color: #2A1B3D;
     width: 100%;
     min-height: 50px;
-    
     bottom: 0;
 }
 
 #aboutme, #websites, #games {
     background-color: #a483b6; 
-    width: 70%;
-    opacity: 0.7;
-    margin: 20px auto;
-    padding: 15px;
+    margin: 0;
+    left: 0;
+    padding: 10px 0;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    overflow: auto;
+    white-space: nowrap;
+    
+}
+
+figure {
+    display: inline-block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+	flex-direction: column;	
+}
+
+ img {
+    width:390px;
+    filter:grayscale(100%);
+}
+
+ img:hover {
+    filter:none;
+}
+
+p {
+    margin: 10px;
+}
+
+@media screen and (max-width: 870px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;        
+    }
+
+    nav {
+        background-color: #d83f87;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin:0;
+    }
+    
+    nav ul {
+        left: 0;
+        margin:0;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        width:100%;
+        margin:20px 0;
+        padding:20px;
+        color:#FFEE;
+        background-color: #d83f87;
+
+    }
+
+    nav ul li:hover {
+        width:100%;
+        margin:20px 0;
+        padding:20px;
+        color:#FFEE;
+        background-color: #b87694;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: auto;
+        overflow-x: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    
+    figure {
+        display: inline-block; 
+    }
+
+     img {
+        width: 300px;
+    }
+
+    
+}
